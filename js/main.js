@@ -103,22 +103,32 @@ $(document).ready(function() {
     $('.ham-menu').mCustomScrollbar();
     $('header nav ol ul.submenu').mCustomScrollbar();
     $('.our-projects .our-projects-wrapper .news ul').mCustomScrollbar();
-    var $locate = $('.text-report');
 
-    
+
+    // limiting characters
+    var $locate = $('.text-report');
     $.each($locate, function() {
         var $element = $(this);
         var textToHide = $element.text().substring(100);
-        var visibleText = $element.text().substring(1, 100);
+        var visibleText = $element.text().substring(1, 200);
         $element
         .html(visibleText + ('<span>' + textToHide + '</span>'))
-        .append('<a id="read-more" title="Read More" style="display: block; cursor: pointer;">Read More&hellip;</a>')
+        .append('<a id="read-more" title="Read More" style="display: block; cursor: pointer;"> Read More&hellip;</a>')
         .click(function() {
             $(this).find('span').toggle();
             $(this).find('a:last').hide();
         });
-
     $('p span').hide();
+    });
+
+    // adding loadmore
+    $(".report-wrapper .report-item").slice(0, 4).show();
+    $("#loadMore").on('click', function (e) {
+        e.preventDefault();
+        $("div:hidden").slice(0, 4).slideDown();
+        if ($("div:hidden").length == 0) {
+            $("#load").fadeOut('slow');
+        }
     });
 
     $('.slider-wrapper').slick({
@@ -178,6 +188,74 @@ $(document).ready(function() {
                 settings: {
                     centerMode: false,
                     slidesToShow: 1
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    centerMode: false,
+                    slidesToShow: 1
+                }
+            }
+        ]
+    });
+    $('.report-wrapper').slick({
+        slidesToShow: 3,
+        dots: false,
+        cssEase: 'ease-in-out',
+        autoplay: false,
+        autoplaySpeed: 7000,
+        slidesToScroll: 1,
+        speed: 1000,
+        pauseOnHover: false,
+        prevArrow: '<i id="prev_slide_31" class="fa fa-chevron-left "></i>',
+        nextArrow: '<i id="next_slide_31" class="fa fa-chevron-right"></i>',
+        responsive: [{
+                breakpoint: 1200,
+                settings: {
+                    centerMode: false,
+                    slidesToShow: 3
+                }
+            },
+            {
+                breakpoint: 900,
+                settings: {
+                    centerMode: false,
+                    slidesToShow: 2
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    centerMode: false,
+                    slidesToShow: 1
+                }
+            }
+        ]
+    });
+    $('.recent-report-wrapper').slick({
+        slidesToShow: 3,
+        dots: false,
+        cssEase: 'ease-in-out',
+        autoplay: false,
+        autoplaySpeed: 7000,
+        slidesToScroll: 1,
+        speed: 1000,
+        pauseOnHover: false,
+        prevArrow: '<i id="prev_slide_31" class="fa fa-chevron-left "></i>',
+        nextArrow: '<i id="next_slide_31" class="fa fa-chevron-right"></i>',
+        responsive: [{
+                breakpoint: 1200,
+                settings: {
+                    centerMode: false,
+                    slidesToShow: 3
+                }
+            },
+            {
+                breakpoint: 900,
+                settings: {
+                    centerMode: false,
+                    slidesToShow: 2
                 }
             },
             {
