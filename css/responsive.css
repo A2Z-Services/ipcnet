@@ -106,7 +106,7 @@
     .gallery-wrapper .video-item {
         margin-bottom: 20px;
     }
-    .video-item:nth-child(2n-1){
+    .video-item{
         margin-right: 10px;
     }
     .publications,
@@ -214,7 +214,6 @@
         margin-bottom: 20px;
     }
     .video-item {
-        margin: 0;
         max-width: 100%;
         -ms-flex: 0 0 100%;
         flex: 0 0 100%;
@@ -244,4 +243,14 @@
     }
 }
 
-@media (max-width: 360px) {}
+
+@media (max-width: 767px) {
+
+    .report-wrapper .report-item, .recent-report-wrapper .report-item{
+      margin: 0;
+    }
+    .video-item:nth-child(2n-1){
+        margin: 0;
+        margin-right: 0;
+    }
+}

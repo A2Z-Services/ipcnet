@@ -1806,17 +1806,3 @@ footer {
 .report-wrapper .prev, .recent-report-wrapper .prev,.prev{
     left: -15px;
 }
-.video-wrapper{
-    display: flex;
-}
-.video-wrapper.slider{
-    display: none;
-}
-@media (max-width: 767px) {
-    .video-wrapper{
-        display: none;
-    }
-    .video-wrapper.slider{
-        display: flex;
-    }
-}
