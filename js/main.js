@@ -287,7 +287,7 @@ $(document).ready(function() {
             }
         ]
     });
-    $('.video-wrapper.slider').slick({
+    $('.video-wrapper').slick({
         slidesToShow: 3,
         dots: false,
         cssEase: 'ease-in-out',
@@ -303,7 +303,6 @@ $(document).ready(function() {
                 settings: {
                     centerMode: false,
                     slidesToShow: 3,
-                    settings: "unslick"
                 }
             },
             {
@@ -311,7 +310,6 @@ $(document).ready(function() {
                 settings: {
                     centerMode: false,
                     slidesToShow: 2,
-                    settings: "unslick"
                 }
             },
             {
@@ -323,7 +321,40 @@ $(document).ready(function() {
             }
         ]
     });
-
+    $('.gallery-wrapper').slick({
+        slidesToShow: 3,
+        dots: false,
+        cssEase: 'ease-in-out',
+        autoplay: false,
+        autoplaySpeed: 7000,
+        slidesToScroll: 1,
+        speed: 1000,
+        pauseOnHover: false,
+        prevArrow: '<img src="images/prev.png" class="prev" alt="prev arrow">',
+        nextArrow: '<img src="images/next.png" class="next" alt="next arrow">',
+        responsive: [{
+                breakpoint: 1200,
+                settings: {
+                    centerMode: false,
+                    slidesToShow: 3,
+                }
+            },
+            {
+                breakpoint: 900,
+                settings: {
+                    centerMode: false,
+                    slidesToShow: 2,
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    centerMode: false,
+                    slidesToShow: 1
+                }
+            }
+        ]
+    });
 });
 
 function slickify(){

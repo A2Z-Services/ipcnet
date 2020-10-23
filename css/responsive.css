@@ -220,9 +220,7 @@
         flex: 0 0 100%;
         max-width: 100%;
     }
-    .video-item:not(:nth-child(4n)) {
-        margin-right: 0;
-    }
+
     .gallery-wrapper .video-item {
         margin-bottom: 20px;
     }
