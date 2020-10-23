@@ -37,11 +37,30 @@ $(document).ready(function() {
         $(this).find('ul').slideToggle(500, "linear")
 
     });
+    $(document).ready(function() {
+        $(".videoitem").on('click', function(event) {
+
+            if (this.hash !== "") {
+                event.preventDefault();
+                var hash = this.hash;
+
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 1200, function() {
+
+                    window.location.hash = hash;
+                });
+            } 
+        });
+    });
 
 });
 $(window).resize(function() {
     checkBrowser();
     setTop();
+    if (getWidth() <= 767) {
+        slickify();  
+    }
 });
 //browser width calculation
 function getWidth() {
@@ -110,20 +129,20 @@ $(document).ready(function() {
     $.each($locate, function() {
         var $element = $(this);
         var textToHide = $element.text().substring(100);
-        var visibleText = $element.text().substring(1, 200);
+        var visibleText = $element.text().substring(1, 100);
         $element
-        .html(visibleText + ('<span>' + textToHide + '</span>'))
-        .append('<a id="read-more" title="Read More" style="display: block; cursor: pointer;"> Read More&hellip;</a>')
-        .click(function() {
-            $(this).find('span').toggle();
-            $(this).find('a:last').hide();
-        });
-    $('p span').hide();
+            .html(visibleText + ('<span>' + textToHide + '</span>'))
+            .append('<a id="read-more" title="Read More" style="display: block; cursor: pointer;"> Read More&hellip;</a>')
+            .click(function() {
+                $(this).find('span').toggle();
+                $(this).find('a:last').hide();
+            });
+        $('p span').hide();
     });
 
     // adding loadmore
     $(".report-wrapper .report-item").slice(0, 4).show();
-    $("#loadMore").on('click', function (e) {
+    $("#loadMore").on('click', function(e) {
         e.preventDefault();
         $("div:hidden").slice(0, 4).slideDown();
         if ($("div:hidden").length == 0) {
@@ -140,8 +159,8 @@ $(document).ready(function() {
         slidesToScroll: 1,
         speed: 1000,
         pauseOnHover: false,
-        prevArrow: '<i id="prev_slide_31" class="fa fa-chevron-left "></i>',
-        nextArrow: '<i id="next_slide_31" class="fa fa-chevron-right"></i>',
+        prevArrow: '<img src="images/prev.png" class="prev" alt="prev arrow">',
+        nextArrow: '<img src="images/next.png" class="next" alt="next arrow">',
         responsive: [{
                 breakpoint: 1200,
                 settings: {
@@ -199,6 +218,7 @@ $(document).ready(function() {
             }
         ]
     });
+
     $('.report-wrapper').slick({
         slidesToShow: 3,
         dots: false,
@@ -208,8 +228,8 @@ $(document).ready(function() {
         slidesToScroll: 1,
         speed: 1000,
         pauseOnHover: false,
-        prevArrow: '<i id="prev_slide_31" class="fa fa-chevron-left "></i>',
-        nextArrow: '<i id="next_slide_31" class="fa fa-chevron-right"></i>',
+        prevArrow: '<img src="images/prev.png" class="prev" alt="prev arrow">',
+        nextArrow: '<img src="images/next.png" class="next" alt="next arrow">',
         responsive: [{
                 breakpoint: 1200,
                 settings: {
@@ -242,8 +262,8 @@ $(document).ready(function() {
         slidesToScroll: 1,
         speed: 1000,
         pauseOnHover: false,
-        prevArrow: '<i id="prev_slide_31" class="fa fa-chevron-left "></i>',
-        nextArrow: '<i id="next_slide_31" class="fa fa-chevron-right"></i>',
+        prevArrow: '<img src="images/prev.png" class="prev" alt="prev arrow">',
+        nextArrow: '<img src="images/next.png" class="next" alt="next arrow">',
         responsive: [{
                 breakpoint: 1200,
                 settings: {
@@ -267,4 +287,45 @@ $(document).ready(function() {
             }
         ]
     });
+    $('.video-wrapper.slider').slick({
+        slidesToShow: 3,
+        dots: false,
+        cssEase: 'ease-in-out',
+        autoplay: false,
+        autoplaySpeed: 7000,
+        slidesToScroll: 1,
+        speed: 1000,
+        pauseOnHover: false,
+        prevArrow: '<img src="images/prev.png" class="prev" alt="prev arrow">',
+        nextArrow: '<img src="images/next.png" class="next" alt="next arrow">',
+        responsive: [{
+                breakpoint: 1200,
+                settings: {
+                    centerMode: false,
+                    slidesToShow: 3,
+                    settings: "unslick"
+                }
+            },
+            {
+                breakpoint: 900,
+                settings: {
+                    centerMode: false,
+                    slidesToShow: 2,
+                    settings: "unslick"
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    centerMode: false,
+                    slidesToShow: 1
+                }
+            }
+        ]
+    });
+
 });
+
+function slickify(){
+
+}
