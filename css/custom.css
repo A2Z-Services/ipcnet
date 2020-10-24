@@ -1631,11 +1631,13 @@ footer {
 .report-wrapper .report-item .text-section {
     padding: 20px;
 }
-
+p.text-report{
+    height: 65px;
+}
 .recent-report-wrapper .report-item p,
 .recent-report-wrapper .report-item span,
-.report-wrapper .report-item p,
-.report-wrapper .report-item span {
+.report-wrapper .report-item p
+ {
     font-family: 'ralewaythin';
     color: #000;
     font-weight: 600;
@@ -1647,11 +1649,13 @@ footer {
 .report-wrapper .report-item h3 {
     color: #0d6902;
     margin-top: 10px;
+    font-size: 15px;
     font-family: 'ralewaybold';
 }
-.report-item span{
+.report-item span,.report-wrapper .report-item span{
     display: block;
     text-align: center;
+    font-family: 'ralewaybold';
 }
 .recent-report-wrapper .report-item h3 span, .report-wrapper .report-item h3 span{
     color: #0d6902;
