@@ -75,10 +75,12 @@ function getWidth() {
 function setTop() {
     var height = $('header').innerHeight();
     var height1 = $(window).height();
-
-    $('.item').css({
-        height: height1 - height
-    });
+        $('.intro-wrapper .item').css({
+            height: height1 - height
+        });  
+    // $('.item').css({
+    //     height: height1 - height
+    // }); 
     $('.tbblz .item.slick-slide').css({
         height: height1 - height - 50
     });
