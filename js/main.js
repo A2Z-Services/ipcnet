@@ -49,6 +49,7 @@ $(document).ready(function() {
                 });
             } 
         });
+        
     });
 
 });
@@ -92,6 +93,9 @@ function setTop() {
         $('.intro-sec .item').css({
             height: height1 - height
         });
+        $('.price-table').css({
+            height: height1 - height
+        });
     }
     
     $('.tbblz .item.slick-slide').css({
@@ -131,15 +135,15 @@ if (navigator.userAgent.match(/(iPod|iPhone|iPad)/)) {
 $(document).ready(function() {
     $('.ham-menu').mCustomScrollbar();
     $('header nav ol ul.submenu').mCustomScrollbar();
-    $('.our-projects .our-projects-wrapper .news ul').mCustomScrollbar();
+    $('.dir-msg .news .news-sec ul').mCustomScrollbar();
 
 
     // limiting characters
-    var $locate = $('.text-report');
+    var $locate = $('.txt-sec .body p');
     $.each($locate, function() {
         var $element = $(this);
-        var textToHide = $element.text().substring(100);
-        var visibleText = $element.text().substring(1, 100);
+        var textToHide = $element.text().substring(200);
+        var visibleText = $element.text().substring(1, 200);
         $element
             .html(visibleText + ('<span>' + textToHide + '</span>'))
             .append('<a id="read-more" title="Read More" style="display: block; cursor: pointer;"> Read More&hellip;</a>')
@@ -149,7 +153,20 @@ $(document).ready(function() {
             });
         $('p span').hide();
     });
-
+    var $locate1 = $('.txt-sec .body.long p');
+    $.each($locate1, function() {
+        var $element = $(this);
+        var textToHide = $element.text().substring(200);
+        var visibleText = $element.text().substring(1, 200);
+        $element
+            .html(visibleText + ('<span>' + textToHide + '</span>'))
+            .append('<a id="read-more" title="Read More" style="display: block; cursor: pointer;"> Read More&hellip;</a>')
+            .click(function() {
+                $(this).find('span').toggle();
+                $(this).find('a:last').hide();
+            });
+        $('p span').hide();
+    });
     // adding loadmore
     $(".report-wrapper .report-item").slice(0, 4).show();
     $("#loadMore").on('click', function(e) {
@@ -306,8 +323,8 @@ $(document).ready(function() {
         slidesToScroll: 1,
         speed: 1000,
         pauseOnHover: false,
-        prevArrow: '<img src="images/prev.png" class="prev" alt="prev arrow">',
-        nextArrow: '<img src="images/next.png" class="next" alt="next arrow">',
+        prevArrow: '<img src="images/new/prev.png" class="prev" alt="prev arrow">',
+        nextArrow: '<img src="images/new/next.png" class="next" alt="next arrow">',
         responsive: [{
                 breakpoint: 1200,
                 settings: {
@@ -340,8 +357,8 @@ $(document).ready(function() {
         slidesToScroll: 1,
         speed: 1000,
         pauseOnHover: false,
-        prevArrow: '<img src="images/prev.png" class="prev" alt="prev arrow">',
-        nextArrow: '<img src="images/next.png" class="next" alt="next arrow">',
+        prevArrow: '<img src="images/new/prev.png" class="prev" alt="prev arrow">',
+        nextArrow: '<img src="images/new/next.png" class="next" alt="next arrow">',
         responsive: [{
                 breakpoint: 1200,
                 settings: {

@@ -1,12 +1,13 @@
 @media (min-width: 992px) {
-    .proj-item:nth-child(3n-1){
-        margin: 0 40px;
+    .proj-item:nth-child(3n),.equalH:nth-child(3n-1){
+        margin-right: 20px;
     }
-    .proj-item{
+    .proj-item,.equalH{
         -ms-flex: 0 0 30%;
         flex: 0 0 30%;
         max-width: 30%;
         margin-bottom: 60px;
+        justify-content: space-between;
     }
     .ham-button {
         right: 40px;
@@ -24,6 +25,9 @@
     .update-links .link-item:nth-child(3n-1) {
         margin-right: 1%;
         margin-left: 1%;
+    }
+    .proj-wrap, .eqWrap,.tabcontent{
+        justify-content: space-between;
     }
 }
 
@@ -60,6 +64,10 @@ header nav ol li {
     }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
+    .proj-item .txt-sec .btns button,.proj-item .txt-sec .btns a{
+        font-size: 14px;
+        padding: 8px 20px;
+    }
     .detailz {
         margin: 0px 0px 0px 0px;
         padding: 13px;
@@ -73,9 +81,24 @@ header nav ol li {
         header nav ol li {
             margin-left: 0px;
         }
+        .proj-sec h1,.dir-msg h1,.mark-report h1,.partners h1,.gallery h1,.video h1{
+            font-size: 32px;
+        }
+        .proj-item .head h3{
+            font-size: 24px;
+        }
+         .tabcontent .proj-item h3{
+            font-size: 18px;
+        }
+        .proj-item .txt-sec .body p, .tabcontent .proj-item .txt-sec .body p{
+            font-size: 16px;
+        }
 }
 
 @media (max-width: 992px) {
+    .proj-item .txt-sec .body p, .tabcontent .proj-item .txt-sec .body p{
+        font-size: 16px;
+    }
     .intro-wrapper .item {
         background-size: cover!important;
         position: relative;
@@ -134,14 +157,11 @@ header nav ol li {
         -ms-flex: 0 0 48%;
         flex: 0 0 48%;
         max-width: 48%;
-        margin-bottom: 20px;
     }
 
     .gallery-wrapper .video-item {
-        margin-bottom: 20px;
     }
     .video-item{
-        margin-right: 10px;
     }
 
 .top-footer, .map-footer {
@@ -177,29 +197,61 @@ header nav ol li a {
     justify-content: center;
     align-items: center;
     }
-    .proj-item{
+    .proj-item,.equalH{
         -ms-flex: 0 0 47%;
         flex: 0 0 47%;
         max-width: 47%;
         margin-bottom: 30px;
     }
-    .proj-item:nth-child(3n-1){
+    .proj-item:nth-child(3n-1),.equalH:nth-child(3n-1){
         margin-left: 0;
         margin-right: 0;
 
     }
-    .proj-item:nth-child(2n-1){
+    .proj-item:nth-child(2n-1),.equalH:nth-child(2n-1){
         margin-right: 35px;
+    }
+    .proj-sec h1,.dir-msg h1,.mark-report h1,.partners h1,.gallery h1,.video h1{
+        font-size: 32px;
+    }
+    .proj-item .head h3, .tabcontent .proj-item h3{
+        font-size: 28px;
+    }
+    .tabcontent .proj-item h3{
+        font-size: 18px;
+    }
+    .dir-msg{
+        flex-direction: column;
+    }
+    .dir-msg .dir-img,.dir-msg .message,.dir-msg .news{
+        width: 100%;
+    }
+    .dir-msg .message{
+        padding:50px 20px
+    }
+    .message .msg{
+        padding:0;
+    }
+    .dir-msg .news {
+        margin: 0 auto;
+    }
+    .dir-msg {
+        padding: 0 6.25vw;
     }
 }
 
 @media (max-width: 767px) {
-    .proj-item:nth-child(3n-1){
-
+    .dir-msg ,.proj-sec{
+        padding: 0 3.75vw;
     }
-    .proj-item:nth-child(2n-1){
+    .proj-sec h1,.dir-msg h1,.mark-report h1,.partners h1,.gallery h1,.video h1{
+        font-size: 28px;
     }
-    .update-links .link-item:nth-child(2n-1){
+    .proj-item .head h3, .tabcontent .proj-item h3{
+        font-size: 24px;
+    }
+    .tabcontent .proj-item h3{
+        font-size: 18px;
     }
     .desk {
         display: block;
@@ -289,7 +341,6 @@ header nav ol li a {
     }
 
     .gallery-wrapper .video-item {
-        margin-bottom: 20px;
     }
     .partners-wrap .image-item {
         -ms-flex: 0 0 32.333%;
@@ -337,13 +388,25 @@ header nav ol li a {
         .price-table .table>tbody>tr>td{
             font-size: 12px;
         }
-        .price-table h2{
+        .price-table h2,.news h2{
             font-size: 24px;
         }
         .slider-sec .item {
             height: 50vh!important;
         }
-
+        .dir-msg{
+            flex-direction: column;
+        }
+        .dir-msg .dir-img,.dir-msg .message,.dir-msg .news{
+            width: 100%;
+        }
+        .dir-msg .message{
+            padding:50px 0px
+        }
+        .dir-msg .news {
+            width: 90%;
+            margin: 0 auto;
+        }
 }
 
 
@@ -355,6 +418,18 @@ header nav ol li a {
     .video-item:nth-child(2n-1){
         margin: 0;
         margin-right: 0;
+    }
+    .dir-msg{
+        flex-direction: column;
+    }
+    .dir-msg .dir-img,.dir-msg .message,.dir-msg .news{
+        width: 100%;
+    }
+    .dir-msg .message{
+        padding:50px 0px
+    }
+    .dir-msg .news {
+        margin: 0 auto;
     }
 }
 @media (max-width: 767px){
@@ -370,11 +445,20 @@ header nav ol li a {
         padding: 10px;
     }
 }
-@media (max-width: 640px) {
-    .proj-item{
+@media (max-width: 767px) {
+    .proj-item,.equalH{
         -ms-flex: 0 0 100%;
         flex: 0 0 100%;
         max-width: 100%;
 margin-bottom: 30px;
+    }
+}
+@media (max-width: 375px) {
+    .proj-item .txt-sec .btns, .tabcontent .proj-item .txt-sec .btns{
+        flex-direction: column;
+        text-align: center;
+    }
+    .proj-item .txt-sec .btns button,.proj-item .txt-sec .btns a{
+        margin-bottom: 10px;
     }
 }
