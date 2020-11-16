@@ -475,12 +475,15 @@ header nav ol li a {
         width: 40px;
     }
 }
-@media (max-width: 767px) {
-    .proj-item,.equalH{
-        -ms-flex: 0 0 100%;
-        flex: 0 0 100%;
-        max-width: 100%;
-margin-bottom: 30px;
+@media (max-width: 768px) {
+
+    .slider-sec .item {
+        background-size: contain!important;
+        position: relative;
+        background-repeat: no-repeat!important;
+        background-position: center!important;
+        border-radius: 20px;
+        height: 37vh!important;
     }
 }
 @media (max-width: 375px) {
@@ -495,5 +498,15 @@ margin-bottom: 30px;
 @media (min-width: 1366px){
     .price-table,.slider-sec .item{
         max-height: 500px;
+    }
+}
+@media (max-width: 560px){
+    .slider-sec .item {
+        background-size: contain!important;
+        position: relative;
+        background-repeat: no-repeat!important;
+        background-position: center!important;
+        border-radius: 20px;
+        height: 27vh!important;
     }
 }
