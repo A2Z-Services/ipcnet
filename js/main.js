@@ -78,13 +78,13 @@ function setTop() {
     var height1 = $(window).height();
     if(getWidth()>992){
         $('.intro-wrapper .item').css({
-            height: height1 - height
+            height: height1 - height - 50
         });
         $('.intro-sec .item').css({
-            height: height1 - height
+            height: height1 - height - 50
         }); 
         $('.price-table').css({
-            height: height1 - height
+            height: height1 - height - 50
         });
     }else{
         $('.intro-wrapper .item').css({
@@ -139,34 +139,32 @@ $(document).ready(function() {
 
 
     // limiting characters
-    var $locate = $('.txt-sec .body p');
-    $.each($locate, function() {
-        var $element = $(this);
-        var textToHide = $element.text().substring(200);
-        var visibleText = $element.text().substring(1, 200);
-        $element
-            .html(visibleText + ('<span>' + textToHide + '</span>'))
-            .append('<a id="read-more" title="Read More" style="display: block; cursor: pointer;"> Read More&hellip;</a>')
-            .click(function() {
-                $(this).find('span').toggle();
-                $(this).find('a:last').hide();
-            });
-        $('p span').hide();
-    });
-    var $locate1 = $('.txt-sec .body.long p');
-    $.each($locate1, function() {
-        var $element = $(this);
-        var textToHide = $element.text().substring(200);
-        var visibleText = $element.text().substring(1, 200);
-        $element
-            .html(visibleText + ('<span>' + textToHide + '</span>'))
-            .append('<a id="read-more" title="Read More" style="display: block; cursor: pointer;"> Read More&hellip;</a>')
-            .click(function() {
-                $(this).find('span').toggle();
-                $(this).find('a:last').hide();
-            });
-        $('p span').hide();
-    });
+    // var $locate = $('.txt-sec .body p');
+    // $.each($locate, function() {
+    //     var $element = $(this);
+    //     var textToHide = $element.text().substring(200);
+    //     var visibleText = $element.text().substring(1, 200);
+    //     $element
+    //         .html(visibleText + ('<span>' + textToHide + '</span>'))
+    //         .append('<a id="read-more" title="Read More" style="display: block; cursor: pointer;"> Read More&hellip;</a>')
+    //         .click(function() {
+    //             $(this).find('span').toggle();
+    //             $(this).find('a:last').hide();
+    //         });
+    // });
+    // var $locate1 = $('.txt-sec .body.long p');
+    // $.each($locate1, function() {
+    //     var $element = $(this);
+    //     var textToHide = $element.text().substring(200);
+    //     var visibleText = $element.text().substring(1, 200);
+    //     $element
+    //         .html(visibleText + ('<span>' + textToHide + '</span>'))
+    //         .append('<a id="read-more" title="Read More" style="display: block; cursor: pointer;"> Read More&hellip;</a>')
+    //         .click(function() {
+    //             $(this).find('span').toggle();
+    //             $(this).find('a:last').hide();
+    //         });
+    // });
     // adding loadmore
     $(".report-wrapper .report-item").slice(0, 4).show();
     $("#loadMore").on('click', function(e) {

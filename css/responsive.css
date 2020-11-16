@@ -171,9 +171,13 @@ header nav ol li {
     display: -webkit-flex;
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
 }
 header nav ol li a {
     font-size: 12px;
+    }
+    .links, .activities, .map, .address {
+        padding: 20px;
     }
     .map-footer{
         font-size: 12px;
@@ -444,6 +448,24 @@ header nav ol li a {
         bottom: 0;
         padding: 10px;
     }
+    .gallery .gallery-wrapper .next,.video .video-wrapper .next{
+        top: calc(50% - 30px);
+        z-index: 9;
+        right: 3.75vw;
+        height: 40px;
+        width: 40px;
+    }
+    .gallery .gallery-wrapper .prev,.video .video-wrapper .prev{
+        left: 3.75vw;
+        top: calc(50% - 30px);
+        z-index: 9;
+        height: 40px;
+        width: 40px;
+    }
+    .news .next,.table-sec .next,.slider-sec .next ,.slider-sec .prev{
+        height: 40px;
+        width: 40px;
+    }
 }
 @media (max-width: 767px) {
     .proj-item,.equalH{
@@ -460,5 +482,10 @@ margin-bottom: 30px;
     }
     .proj-item .txt-sec .btns button,.proj-item .txt-sec .btns a{
         margin-bottom: 10px;
+    }
+}
+@media (min-width: 1366px){
+    .price-table,.slider-sec .item{
+        max-height: 500px;
     }
 }
