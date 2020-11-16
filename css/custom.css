@@ -2294,7 +2294,7 @@ width: 100%;
     width: 30%;
     background-image: linear-gradient(to right, #739b40 0%, #52a565 100%);
     border-radius: 20px;
-    max-height: 700px;
+    max-height: 600px;
     position: relative;
 }
  .message .msg{
