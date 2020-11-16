@@ -94,7 +94,7 @@ function setTop() {
             height: height1 - height
         });
         $('.price-table').css({
-            height: height1 - height
+            height: "auto"
         });
     }
 

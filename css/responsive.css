@@ -247,6 +247,12 @@ header nav ol li a {
 }
 
 @media (max-width: 767px) {
+    .tab{
+        flex-wrap: wrap;
+    }
+    .tab button{
+        margin-bottom: 15px;
+    }
     .dir-msg ,.proj-sec{
         padding: 0 3.75vw;
     }
