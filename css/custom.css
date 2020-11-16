@@ -1209,10 +1209,13 @@ footer {
     text-align: right;
 }
 
-.dev a {
-    color: #759b3e;
+.dev p {
+    font-weight: 600;
 }
-
+.dev a {
+    font-weight: 400;
+    color: #fff;
+}
 
 /* intro wrapper */
 
@@ -2525,4 +2528,32 @@ text-align: center;
 .news .next,.table-sec .next{
     height: 50px;
     width: 50px;
+}
+.arrow {
+    border: solid #fff;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 3px;
+  }
+.up {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+    -webkit-transition: rotate(-135deg);
+    -moz-transition:  rotate(-135deg);
+    -ms-transition: rotate(-135deg);
+    -o-transition:  rotate(-135deg);
+    transition:  rotate(-135deg);
+  }
+  
+  .down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -webkit-transition: rotate(45deg);
+    -moz-transition: rotate(45deg);
+    -ms-transition: rotate(45deg);
+    -o-transition: rotate(45deg);
+    transition: rotate(45deg);
+  }
+  .price-table .table>thead>tr>th{
+    padding: 5px 9px 5px 9px!important;
 }

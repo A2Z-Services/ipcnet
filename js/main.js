@@ -97,14 +97,7 @@ function setTop() {
             height: height1 - height
         });
     }
-    
-    $('.tbblz .item.slick-slide').css({
-        height: height1 - height - 50
-    });
 
-    $('.detailz').css({
-        height: height1 - height
-    });
 
 }
 $(window).on('load', function() {

@@ -55,7 +55,9 @@ font-size: 14px;
 header nav ol li {
     margin-left: 5px;
 }
-
+.price-table h2, .news h2{
+    font-size:24px;
+}
 }
 @media (min-width: 1366px) {
     .table-sec {
