@@ -76,7 +76,7 @@ function getWidth() {
 function setTop() {
     var height = $('header').innerHeight();
     var height1 = $(window).height();
-    if(getWidth()>992){
+    if(getWidth()>1200){
         $('.intro-wrapper .item').css({
             height: height1 - height - 50
         });
