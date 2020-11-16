@@ -476,7 +476,12 @@ header nav ol li a {
     }
 }
 @media (max-width: 768px) {
-
+    .proj-item,.equalH{
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+margin-bottom: 30px;
+    }
     .slider-sec .item {
         background-size: contain!important;
         position: relative;
