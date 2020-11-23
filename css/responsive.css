@@ -48,6 +48,12 @@
         text-transform: uppercase;
         border: 2px solid rgb(164, 213, 159);
     }
+    .slider-sec{
+        width: 60%;
+    }
+    .price-table{
+        width: 40%;
+    }
 
 header nav ol li a {
 font-size: 14px;
@@ -189,6 +195,9 @@ header nav ol li a {
     }
     .slider-sec,.price-table{
         width: 100%;
+    }
+    .slider-sec{
+        padding-bottom: 50px;
     }
     .price-table{
         margin-left: 0;
@@ -419,6 +428,44 @@ header nav ol li a {
             width: 90%;
             margin: 0 auto;
         }
+        .proj-item .img-sec img, .tabcontent .proj-item .img-sec img{
+            width: 100%;
+        }
+        .header-menu{
+            padding: 30px 25px;
+        }
+        .intro-sec{
+            padding: 0px 25px 25px;
+        }
+        .proj-sec,.dir-msg, .proj-sec,.mark-report, .partners {
+            padding:25px 25px;
+        }
+        .tabcontent .proj-item {
+            margin-bottom: 20px;
+        }
+        .partners{
+            width: 100%;
+        }
+        .partners-wrap .image-item {
+            -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+        }
+        .gallery .gallery-wrapper{
+            padding: 30px 0;
+        }
+        .gallery, .video {
+            padding: 0 0 50px 0 ;
+        }
+        .tab button {
+            margin-bottom: 15px;
+            width: 300px;
+        }
+        .proj-item, .equalH {
+            -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+            max-width: 50%;
+            margin-bottom: 30px;
+        }
 }
 
 
@@ -477,9 +524,7 @@ header nav ol li a {
 }
 @media (max-width: 768px) {
     .proj-item,.equalH{
-        -ms-flex: 0 0 100%;
-        flex: 0 0 100%;
-        max-width: 100%;
+
 margin-bottom: 30px;
     }
     .slider-sec .item {
@@ -498,11 +543,23 @@ margin-bottom: 30px;
     }
     .proj-item .txt-sec .btns button,.proj-item .txt-sec .btns a{
         margin-bottom: 10px;
+        width: 100%;
+    }
+    .proj-item, .equalH {
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
     }
 }
 @media (min-width: 1366px){
     .price-table,.slider-sec .item{
         max-height: 500px;
+    }
+    .slider-sec{
+        width: 70%;
+    }
+    .price-table{
+        width: 30%;
     }
 }
 @media (max-width: 560px){

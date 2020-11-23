@@ -407,38 +407,6 @@ $(document).ready(function() {
             }
         ]
     });
-    $('.table-sec').slick({
-        slidesToShow: 1,
-        dots: false,
-        cssEase: 'ease-in-out',
-        autoplay: false,
-        autoplaySpeed: 7000,
-        slidesToScroll: 1,
-        speed: 1000,
-        pauseOnHover: false,
-        responsive: [{
-                breakpoint: 1200,
-                settings: {
-                    centerMode: true,
-                    slidesToShow: 1
-                }
-            },
-            {
-                breakpoint: 900,
-                settings: {
-                    centerMode: true,
-                    slidesToShow: 1
-                }
-            },
-            {
-                breakpoint: 600,
-                settings: {
-                    centerMode: true,
-                    slidesToShow: 1
-                }
-            }
-        ]
-    });
 });
 
 function slickify(){
