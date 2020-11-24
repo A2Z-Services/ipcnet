@@ -2031,7 +2031,7 @@ p.text-report {
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
-    padding: 0px 3.75vw 25px;
+    padding: 0px 3.75vw 50px;
 }
 
 .slider-sec {
@@ -2066,8 +2066,6 @@ textarea:focus,
     outline: 1px #000 !important;
 }
 
-
-
 .price-table h2,
 .news h2 {
     text-transform: uppercase;
@@ -2081,7 +2079,7 @@ textarea:focus,
 }
 
 .price-table h2 {
-    margin-bottom: 20px;
+    margin-bottom: 0px;
 }
 
 .price-table h2:after,
@@ -2094,10 +2092,11 @@ textarea:focus,
     margin-left: 15px;
     top: 50%;
 }
-.price-table .table{
-    border-spacing: 0;
 
+.price-table .table {
+    border-spacing: 0;
 }
+
 .price-table .table>thead>tr>th {
     text-transform: uppercase;
     color: #759b3e;
@@ -2130,7 +2129,7 @@ textarea:focus,
 }
 
 .proj-sec {
-    padding: 25px 6.25vw 0;
+    padding: 50px 6.25vw 0;
     background-color: #E8E8E8;
 }
 
@@ -2296,13 +2295,15 @@ textarea:focus,
     font-weight: 600;
     border: 1px solid #759b3e;
     border-radius: 5px;
-    padding:10px 30px;
+    padding: 10px 30px;
     width: 50%;
     text-align: center;
 }
-.proj-item .txt-sec .btns a{
-    background-color:#74a041
+
+.proj-item .txt-sec .btns a {
+    background-color: #74a041
 }
+
 .proj-item .txt-sec .btns a:hover {
     background-color: #ffffff;
     color: #759b3e;
@@ -2704,7 +2705,8 @@ p {
     font-family: 'ralewayregular';
 }
 
-.proj-sec .proj-item .txt-sec .body p ,.proj-item .txt-sec .body p{
+.proj-sec .proj-item .txt-sec .body p,
+.proj-item .txt-sec .body p {
     color: #ffffff;
 }
 
@@ -2728,46 +2730,64 @@ p {
 .proj-sec .proj-item .txt-sec {
     border-radius: 0 0 40px 40px;
 }
-.more-table{
+
+.more-table {
     text-align: center;
     width: 100%;
     font-family: 'ralewaybold';
     padding: 20px 0;
-    background-color: #759c3f;
-    border-radius: 0 0 40px 40px;
+    margin: 20px 0;
+    /* background-color: #759c3f; */
+    /* border-radius: 0 0 40px 40px; */
 }
-.more-table a{
+
+.more-table a {
     color: #ffffff;
-        border-radius: 0 0 40px 40px;
-
-
+    /* border-radius: 0 0 40px 40px; */
+    background-color: #759c3f;
+    padding: 20px 50px;
+    border: 1px solid #759c3f;
+    border-radius: 20px;
+    font-size: 20px;
 }
-.disclaimer{
-    padding-top: 20px;
-    text-align:center;
+
+.more-table a:hover {
+    color: #759c3f;
     background-color: #ffffff;
 }
-.disclaimer p{
+
+.disclaimer {
+    padding: 20px;
+    text-align: center;
+}
+
+.disclaimer p {
     color: #236931;
     font-size: 10px;
     margin: 0;
 }
-.price-table{
+
+.price-table {
     border-radius: 40px 40px 0 0;
 }
-.tabcontent .proj-item{
+
+.tabcontent .proj-item {
     margin-bottom: 0;
 }
-.price-table{
+
+.price-table {
     border-radius: 40px;
 }
-.price-table h2{
+
+.price-table h2 {
     border-radius: 40px 40px 0 0;
     padding: 30px 0;
     background-image: linear-gradient(to right, #719d43 0%, #52a565 100%);
 }
+
 .price-table {
-    padding:0;
+    padding: 0;
     width: 30%;
     margin-left: 20px;
+    box-shadow: 0px 0px 10px -5px #0d6902;
 }
