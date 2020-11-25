@@ -2190,7 +2190,7 @@ textarea:focus,
 
 .proj-item .img-sec img,
 .tabcontent .proj-item .img-sec img {
-    width: 75%;
+    width: 100%;
 }
 
 .proj-item .txt-sec,
@@ -2318,6 +2318,8 @@ textarea:focus,
     display: -webkit-flex;
     display: flex;
     padding: 60px 0 0;
+    flex-wrap: wrap;
+    align-items: flex-start;
 }
 
 .dir-msg .dir-img {
@@ -2349,14 +2351,16 @@ textarea:focus,
 
 .dir-msg .message {
     width: 45%;
+    flex: 1 auto;
+
 }
 
 .dir-msg .news {
     width: 30%;
     background-image: linear-gradient(to right, #739b40 0%, #52a565 100%);
     border-radius: 20px;
-    max-height: 700px;
     position: relative;
+    flex: 1 auto;
 }
 
 .message .msg {
@@ -2365,6 +2369,7 @@ textarea:focus,
 
 .dir-msg {
     padding: 50px 6.25vw 0 0;
+    flex: 1 auto;
 }
 
 .msg p {
@@ -2400,13 +2405,12 @@ textarea:focus,
 }
 
 .news-sec {
-    padding: 50px 20px;
+    padding: 50px 20px 100px;
 }
 
 .news-sec ul {
     list-style-type: none;
     padding-left: 0;
-    max-height: 500px;
 }
 
 .news-sec ul li {

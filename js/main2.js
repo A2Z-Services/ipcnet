@@ -128,7 +128,7 @@ if (navigator.userAgent.match(/(iPod|iPhone|iPad)/)) {
 $(document).ready(function() {
     $('.ham-menu').mCustomScrollbar();
     $('header nav ol ul.submenu').mCustomScrollbar();
-    $('.dir-msg .news .news-sec ul').mCustomScrollbar();
+    // $('.dir-msg .news .news-sec ul').mCustomScrollbar();
 
 
     // limiting characters
