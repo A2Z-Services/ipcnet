@@ -461,9 +461,9 @@ header nav ol li a {
             width: 300px;
         }
         .proj-item, .equalH {
-            -ms-flex: 0 0 47%;
-            flex: 0 0 47%;
-            max-width: 47%;
+            -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+            max-width: 100%;
             margin-bottom: 30px;
         }
 }
@@ -550,6 +550,11 @@ margin-bottom: 30px;
         flex: 0 0 100%;
         max-width: 100%;
     }
+    .proj-item, .equalH {
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
 }
 @media (min-width: 1366px){
     .price-table,.slider-sec .item{
@@ -570,5 +575,17 @@ margin-bottom: 30px;
         background-position: center!important;
         border-radius: 20px;
         height: 27vh!important;
+    }
+    .proj-item{
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+@media (max-width: 375px) {
+    .proj-item{
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
     }
 }
