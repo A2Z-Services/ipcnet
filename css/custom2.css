@@ -1370,7 +1370,7 @@ footer {
 .table>tfoot>tr>th,
 .table>thead>tr>td,
 .table>thead>tr>th {
-    padding: 10px 9px 0px 9px !important;
+    padding: 10px 9px 10px 9px !important;
     line-height: 19px;
     vertical-align: top;
     border-top: 0px solid #ddd;
@@ -2095,6 +2095,9 @@ textarea:focus,
 
 .price-table .table {
     border-spacing: 0;
+    margin: 0 auto;
+    width: 100%;
+    background-color: #E8E8E8;
 }
 
 .price-table .table>thead>tr>th {
@@ -2103,14 +2106,12 @@ textarea:focus,
     font-size: 19px;
     font-weight: bold;
     letter-spacing: 1.52px;
-    background-color: #E8E8E8;
 }
 
 .price-table .table>tbody>tr>td {
     color: #236931;
     font-size: 14px;
     letter-spacing: 1.52px;
-    background-color: #ffffff;
 }
 
 .price-table .table>tbody>tr>td:first-child {
@@ -2664,7 +2665,7 @@ textarea:focus,
 }
 
 .arrow {
-    border: solid #fff;
+    border: solid #236931;
     border-width: 0 2px 2px 0;
     display: inline-block;
     padding: 3px;
@@ -2691,7 +2692,7 @@ textarea:focus,
 }
 
 .price-table .table>thead>tr>th {
-    padding: 5px 9px 5px 9px!important;
+    padding: 10px 9px 10px 9px!important;
 }
 
 .fa {
@@ -2740,18 +2741,17 @@ p {
     width: 100%;
     font-family: 'ralewaybold';
     padding: 20px 0;
-    margin: 20px 0;
-    /* background-color: #759c3f; */
-    /* border-radius: 0 0 40px 40px; */
+    background-color: #759c3f;
+    border-radius: 0 0 40px 40px;
 }
 
 .more-table a {
     color: #ffffff;
     /* border-radius: 0 0 40px 40px; */
-    background-color: #759c3f;
+    /* background-color: #759c3f; */
     padding: 20px 50px;
-    border: 1px solid #759c3f;
-    border-radius: 20px;
+    /* border: 1px solid #759c3f; */
+    /* border-radius: 20px; */
     font-size: 20px;
 }
 
@@ -2780,7 +2780,7 @@ p {
 }
 
 .price-table {
-    border-radius: 40px;
+    /* border-radius: 40px; */
 }
 
 .price-table h2 {
@@ -2793,5 +2793,12 @@ p {
     padding: 0;
     width: 30%;
     margin-left: 20px;
-    box-shadow: 0px 0px 10px -5px #0d6902;
+}
+.table>thead{
+    background-color: #fff;
+    width: auto;
+}
+tbody{
+    background-color: #E8E8E8;
+    width: auto;
 }

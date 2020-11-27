@@ -67,7 +67,6 @@ header nav ol li {
 }
 @media (min-width: 1366px) {
     .table-sec {
-        width: 80%;
         margin: 0 auto;
     }
 }
