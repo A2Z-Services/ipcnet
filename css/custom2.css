@@ -2097,7 +2097,7 @@ textarea:focus,
     border-spacing: 0;
     margin: 0 auto;
     width: 100%;
-    background-color: #E8E8E8;
+    background-color:#eff6ee;
 }
 
 .price-table .table>thead>tr>th {
@@ -2116,8 +2116,11 @@ textarea:focus,
 
 .price-table .table>tbody>tr>td:first-child {
     text-align: left;
+    padding-left: 20px!important;
 }
-
+.price-table .table>tbody>tr>td:last-child {
+    padding-right: 20px!important;
+}
 .table-sec .next {
     z-index: 9;
     right: 20px;
@@ -2131,7 +2134,7 @@ textarea:focus,
 
 .proj-sec {
     padding: 50px 6.25vw 0;
-    background-color: #E8E8E8;
+    background-color: #eff6ee;
 }
 
 .proj-sec h1,
@@ -2755,10 +2758,7 @@ p {
     font-size: 20px;
 }
 
-.more-table a:hover {
-    color: #759c3f;
-    background-color: #ffffff;
-}
+
 
 .disclaimer {
     padding: 20px;
@@ -2785,7 +2785,7 @@ p {
 
 .price-table h2 {
     border-radius: 40px 40px 0 0;
-    padding: 30px 0;
+    padding: 30px;
     background-image: linear-gradient(to right, #719d43 0%, #52a565 100%);
 }
 
@@ -2799,6 +2799,6 @@ p {
     width: auto;
 }
 tbody{
-    background-color: #E8E8E8;
+    background-color: #eff6ee;
     width: auto;
 }
