@@ -200,6 +200,9 @@ header nav ol li a {
     }
     .price-table{
         margin-left: 0;
+        width: 60%;
+        max-width: 400px;
+    margin: 0 auto;
     }
     .table{
         display: -webkit-box;
@@ -586,5 +589,18 @@ margin-bottom: 30px;
         -ms-flex: 0 0 100%;
         flex: 0 0 100%;
         max-width: 100%;
+    }
+    .price-table{
+        margin-left: 0;
+        width: 100%;
+    margin: 0 auto;
+    }
+}
+@media (max-width: 576px) {
+
+    .price-table{
+        margin-left: 0;
+        width: 100%;
+    margin: 0 auto;
     }
 }
