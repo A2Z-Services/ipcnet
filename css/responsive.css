@@ -475,7 +475,7 @@
     }
     .price-table .table>thead>tr>th,
     .price-table .table>tbody>tr>td {
-        padding: 10px 19px 10px 19px!important
+        padding: 10px 5vw 10px 5vw!important
     }
     .slider-sec .item {
         height: 50vh!important;
@@ -690,7 +690,7 @@
     }
     .price-table .table>thead>tr>th,
     .price-table .table>tbody>tr>td {
-        padding: 10px 19px 10px 19px!important
+        padding: 10px 5vw 10px 5vw!important
     }
 }
 
@@ -707,7 +707,7 @@
     }
     .price-table .table>thead>tr>th,
     .price-table .table>tbody>tr>td {
-        padding: 10px 15px 10px 15px!important
+        padding: 10px 5vw 10px 5vw!important
     }
 }
 
