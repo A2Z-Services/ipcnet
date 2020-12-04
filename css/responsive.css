@@ -103,6 +103,9 @@ header nav ol li {
 }
 
 @media (max-width: 992px) {
+    .price-table .table>thead>tr>th ,.price-table .table>tbody>tr>td{
+        padding: 10px 25px 10px 23px!important;
+    }
     .proj-item .txt-sec .body p, .tabcontent .proj-item .txt-sec .body p{
         font-size: 16px;
     }
@@ -413,6 +416,13 @@ header nav ol li a {
         }
         .price-table h2,.news h2{
             font-size: 24px;
+            border-radius: 20px 20px 0 0;
+        }
+        .more-table {
+            border-radius: 0 0 20px 20px;
+        }
+        .price-table .table>thead>tr>th ,.price-table .table>tbody>tr>td{
+            padding: 10px 25px 10px 23px!important;
         }
         .slider-sec .item {
             height: 50vh!important;
