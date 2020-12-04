@@ -2039,7 +2039,7 @@ p.text-report {
 }
 
 .slider-sec .item {
-    background-size: cover!important;
+    background-size: 100% 100%!important;
     position: relative;
     background-position: center!important;
     border-radius: 20px;
@@ -2097,7 +2097,7 @@ textarea:focus,
     border-spacing: 0;
     margin: 0 auto;
     width: 100%;
-    background-color:#eff6ee;
+    background-color: #eff6ee;
 }
 
 .price-table .table>thead>tr>th {
@@ -2118,9 +2118,11 @@ textarea:focus,
     text-align: left;
     padding-left: 20px!important;
 }
+
 .price-table .table>tbody>tr>td:last-child {
     padding-right: 20px!important;
 }
+
 .table-sec .next {
     z-index: 9;
     right: 20px;
@@ -2356,7 +2358,6 @@ textarea:focus,
 .dir-msg .message {
     width: 45%;
     flex: 1 auto;
-
 }
 
 .dir-msg .news {
@@ -2758,8 +2759,6 @@ p {
     font-size: 20px;
 }
 
-
-
 .disclaimer {
     padding: 20px;
     text-align: center;
@@ -2794,11 +2793,13 @@ p {
     width: 30%;
     margin-left: 20px;
 }
-.table>thead{
+
+.table>thead {
     background-color: #fff;
     width: auto;
 }
-tbody{
+
+tbody {
     background-color: #eff6ee;
     width: auto;
 }
