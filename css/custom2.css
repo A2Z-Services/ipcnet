@@ -2815,6 +2815,7 @@ p {
 .price-table h2 {
     border-radius: 40px 40px 0 0;
     padding: 30px;
+    text-align: left;
     background-image: linear-gradient(to right, #719d43 0%, #52a565 100%);
 }
 

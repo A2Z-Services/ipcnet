@@ -415,7 +415,7 @@
         text-align: center;
     }
     .price-table .table>thead>tr>th {
-        font-size: 15px;
+        font-size: 13px;
     }
     .price-table .table>tbody>tr>td {
         font-size: 12px;
@@ -430,7 +430,7 @@
     }
     .price-table .table>thead>tr>th,
     .price-table .table>tbody>tr>td {
-        padding: 10px 5vw 10px 5vw!important
+        padding: 10px 4vw 10px 4vw!important
     }
     .slider-sec .item {
         height: 50vh!important;
