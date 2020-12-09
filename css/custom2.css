@@ -523,7 +523,7 @@ img {
 @font-face {
     font-family: 'ralewaybold';
     src: url('../fonts/raleway-bold-webfont.woff2') format('woff2'), url('../fonts/raleway-bold-webfont.woff') format('woff');
-    font-weight: normal;
+    font-weight: 700;
     font-style: normal;
 }
 
@@ -536,7 +536,35 @@ img {
 
 @font-face {
     font-family: 'ralewayregular';
-    src: url('../fonts/Raleway-Regular.woff2') format('woff2'), url('../fonts/Raleway-Regular.woff') format('woff');
+    src: url('../fonts/Raleway-Regular.woff2') format('woff2'), url('../fonts/Raleway-Regular.woff') format('otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'myriadregular';
+    src: url('../fonts/myriad.OTF') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'poppinsmedium';
+    src: url('../fonts/poppins.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ralewaysemibold';
+    src: url('../fonts/Raleway-SemiBold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ralewayextralight';
+    src: url('../fonts/Raleway-ExtraLight.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -687,10 +715,9 @@ header nav ol li:hover ul {
 }
 
 header nav ol li a {
-    font-family: 'ralewaybold';
+    font-family: 'ralewaysemibold';
     text-transform: capitalize;
     color: #236931;
-    font-size: 16px;
     letter-spacing: 0.32px;
 }
 
@@ -832,15 +859,14 @@ ol.top-menu {
 .mainMenu.sub button {
     padding: 5px;
     width: 100px;
-    font-family: 'ralewaybold';
+    font-family: 'ralewaymedium';
     cursor: pointer;
     text-transform: capitalize;
 }
 
 .mainMenu.count span {
-    font-family: 'ralewaybold';
+    font-family: 'poppinsmedium';
     color: #749e3f;
-    font-size: 14px;
 }
 
 .subscribe {
@@ -1000,11 +1026,11 @@ ol.top-menu {
     color: #0d6902
 }
 
-.menu-open .ham-menu .login button {
+.ham-menu .login button {
     width: 130px;
     font-family: 'ralewaybold';
     border-radius: 5px;
-    margin-top: 10px;
+    margin-top: 20px;
     padding: 10px 20px;
     cursor: pointer;
     margin-left: 20px;
@@ -1047,7 +1073,7 @@ ol.top-menu {
     color: #fff;
     font-weight: bold;
     font-size: 18px;
-    padding: 10px 20px 0;
+    padding: 20px 20px 0;
 }
 
 .primary-menu li span:after {
@@ -1164,21 +1190,21 @@ footer {
 
 .top-footer ul li a {
     color: #fff;
-    font-weight: bold;
     text-transform: capitalize;
+    font-family: 'poppinsmedium';
 }
 
 .top-footer p {
     color: #fff;
     text-transform: capitalize;
     margin-bottom: 22px;
+    
 }
 
 .top-footer h4 {
     font-family: 'ralewaybold';
     text-transform: capitalize;
     color: #759b3e;
-    font-size: 24px;
 }
 
 .map-footer {
@@ -1216,13 +1242,16 @@ footer {
 .copyright {
     text-align: left;
 }
-
+.copyright p{
+    font-family: 'poppinsmedium';
+}
 .dev {
     text-align: right;
 }
 
 .dev p {
     font-weight: 600;
+    font-family: 'poppinsmedium';
 }
 
 .dev a {
@@ -2071,7 +2100,6 @@ textarea:focus,
     text-transform: uppercase;
     color: #ffffff;
     font-family: 'ralewaybold';
-    font-size: 30px;
     letter-spacing: 2.4px;
     line-height: normal;
     text-align: center;
@@ -2112,6 +2140,7 @@ textarea:focus,
     color: #236931;
     font-size: 14px;
     letter-spacing: 1.52px;
+    font-family: "ralewaysemibold";
 }
 
 .price-table .table>tbody>tr>td:first-child {
@@ -2147,7 +2176,6 @@ textarea:focus,
     text-transform: uppercase;
     color: #759b3e;
     font-family: 'ralewaybold';
-    font-size: 45px;
     text-align: center;
 }
 
@@ -2237,7 +2265,6 @@ textarea:focus,
 .proj-item .head h3 {
     color: #fff;
     font-family: 'ralewaybold';
-    font-size: 24px;
     margin-bottom: 0;
     width: 70%;
 }
@@ -2259,9 +2286,9 @@ textarea:focus,
 .proj-item .txt-sec .body p,
 .tabcontent .proj-item .txt-sec .body p {
     color: #242222;
-    font-size: 16px;
     font-weight: 200;
     line-height: 20px;
+    font-family: 'ralewayextralight';
 }
 
 .proj-item .txt-sec .btns,
@@ -2278,13 +2305,13 @@ textarea:focus,
 .tabcontent .proj-item .txt-sec .btns button {
     background-color: #759b3e;
     color: #ffffff;
-    font-size: 16px;
     font-weight: 600;
     border: 1px solid #759b3e;
     border-radius: 5px;
     padding: 10px 30px;
     width: 49%;
     text-align: center;
+    font-family: 'ralewaymedium';
 }
 
 .proj-item .txt-sec .btns button:hover,
@@ -2297,11 +2324,11 @@ textarea:focus,
 .tabcontent .proj-item .txt-sec .btns a {
     background-color: #759b3e;
     color: #ffffff;
-    font-size: 16px;
     font-weight: 600;
     border: 1px solid #759b3e;
     border-radius: 5px;
     padding: 10px 30px;
+    font-family: 'ralewaymedium';
     width: 50%;
     text-align: center;
 }
@@ -2406,7 +2433,7 @@ textarea:focus,
     margin-top: 10px;
     font-weight: 900;
     text-transform: capitalize;
-    font-family: 'ralewaybold';
+    font-family: 'ralewaymedium';
 }
 
 .news-sec {
@@ -2449,7 +2476,6 @@ textarea:focus,
     text-transform: uppercase;
     color: #759b3e;
     font-family: 'ralewaybold';
-    font-size: 45px;
     text-align: center;
 }
 
@@ -2475,6 +2501,7 @@ textarea:focus,
     color: #000;
     border: 1px solid #000;
     font-size: 18px;
+    font-family: 'ralewaymedium';
     border-radius: 20px;
     font-weight: 600;
     padding: 10px 30px;
@@ -2496,9 +2523,8 @@ textarea:focus,
 .viewAll,
 .viewVideo,
 .viewGallery {
-    font-size: 18px;
     border-radius: 12px;
-    font-family: 'ralewaymedium';
+    font-family: 'myriadregular';
     padding: 10px 30px;
     margin: 0 5px;
     color: #ffffff;

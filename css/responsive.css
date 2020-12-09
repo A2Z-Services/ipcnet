@@ -64,54 +64,11 @@
     header nav ol li {
         margin-left: 5px;
     }
-    .price-table h2,
-    .news h2 {
-        font-size: 24px;
-    }
 }
 
 @media (min-width: 1366px) {
     .table-sec {
         margin: 0 auto;
-    }
-}
-
-@media (min-width: 992px) and (max-width: 1199px) {
-    .proj-item .txt-sec .btns button,
-    .proj-item .txt-sec .btns a {
-        font-size: 14px;
-        padding: 8px 20px;
-    }
-    .detailz {
-        margin: 0px 0px 0px 0px;
-        padding: 13px;
-        top: 0;
-        position: relative;
-        text-transform: uppercase;
-    }
-    header nav ol li a {
-        font-size: 13px;
-    }
-    header nav ol li {
-        margin-left: 0px;
-    }
-    .proj-sec h1,
-    .dir-msg h1,
-    .mark-report h1,
-    .partners h1,
-    .gallery h1,
-    .video h1 {
-        font-size: 32px;
-    }
-    .proj-item .head h3 {
-        font-size: 24px;
-    }
-    .tabcontent .proj-item h3 {
-        font-size: 18px;
-    }
-    .proj-item .txt-sec .body p,
-    .tabcontent .proj-item .txt-sec .body p {
-        font-size: 16px;
     }
 }
 
@@ -136,7 +93,7 @@
     }
     .proj-item .txt-sec .body p,
     .tabcontent .proj-item .txt-sec .body p {
-        font-size: 16px;
+        font-size: 14px;
     }
     .intro-wrapper .item {
         background-size: cover!important;
@@ -264,12 +221,15 @@
         margin-right: 35px;
     }
     .proj-sec h1,
-    .dir-msg h1,
     .mark-report h1,
     .partners h1,
     .gallery h1,
-    .video h1 {
+    .video h1,
+    .mark-report h1 {
         font-size: 32px;
+    }
+    .dir-msg h1 {
+        font-size: 30px;
     }
     .proj-item .head h3,
     .tabcontent .proj-item h3 {
@@ -304,6 +264,13 @@
     .price-table {
         padding: 0 25px;
     }
+    .price-table h2,
+    .news h2 {
+        font-size: 22px;
+    }
+    .top-footer h4{
+        font-size: 22px;
+    }
 }
 
 @media (max-width: 767px) {
@@ -316,18 +283,6 @@
     .dir-msg,
     .proj-sec {
         padding: 0 3.75vw;
-    }
-    .proj-sec h1,
-    .dir-msg h1,
-    .mark-report h1,
-    .partners h1,
-    .gallery h1,
-    .video h1 {
-        font-size: 28px;
-    }
-    .proj-item .head h3,
-    .tabcontent .proj-item h3 {
-        font-size: 24px;
     }
     .tabcontent .proj-item h3 {
         font-size: 18px;
@@ -467,7 +422,7 @@
     }
     .price-table h2,
     .news h2 {
-        font-size: 24px;
+        font-size: 20px;
         border-radius: 20px 20px 0 0;
     }
     .more-table {
@@ -734,5 +689,257 @@
         left: 20px;
         height: 50px;
         width: 50px;
+    }
+    .proj-item .txt-sec .btns button,
+    .tabcontent .proj-item .txt-sec .btns button,
+    .proj-item .txt-sec .btns a,
+    .tabcontent .proj-item .txt-sec .btns a {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .proj-item .txt-sec .btns button,
+    .proj-item .txt-sec .btns a {
+        font-size: 14px;
+        padding: 8px 20px;
+    }
+    .detailz {
+        margin: 0px 0px 0px 0px;
+        padding: 13px;
+        top: 0;
+        position: relative;
+        text-transform: uppercase;
+    }
+    header nav ol li a {
+        font-size: 12px;
+    }
+    .mainMenu.login button,
+    .mainMenu.sub button {
+        font-size: 13pt;
+    }
+    header nav ol li {
+        margin-left: 0px;
+    }
+    .dir-msg h1 {
+        font-size: 30px;
+    }
+    .proj-item .head h3 {
+        font-size: 24px;
+    }
+    .tabcontent .proj-item h3 {
+        font-size: 18px;
+    }
+    .proj-item .txt-sec .body p,
+    .tabcontent .proj-item .txt-sec .body p {
+        font-size: 16px;
+    }
+    .price-table h2,
+    .news h2 {
+        font-size: 22px;
+    }
+    .top-footer h4{
+        font-size: 24px;
+    }
+    .price-table .table>thead>tr>th {
+        font-size: 18px;
+    }
+    .price-table .table>tbody>tr>td {
+        font-size: 14px;
+    }
+    .proj-sec h1,
+    .mark-report h1,
+    .partners h1,
+    .gallery h1,
+    .video h1 {
+        font-size: 35px;
+    }
+    .dir-msg h1 {
+        font-size: 32px;
+    }
+    .proj-item .head h3 {
+        font-size: 26px;
+    }
+    .proj-item .txt-sec .body p,
+    .tabcontent .proj-item .txt-sec .body p {
+        font-size: 14px;
+    }
+    .proj-item .txt-sec .btns button,
+    .tabcontent .proj-item .txt-sec .btns button,
+    .proj-item .txt-sec .btns a,
+    .tabcontent .proj-item .txt-sec .btns a {
+        font-size: 16px;
+    }
+    .msg p b {
+        font-size: 18px;
+    }
+    .rit p.name {
+        font-size: 14px;
+    }
+    .report-wrap .proj-item .head h3 {
+        font-size: 18px;
+    }
+    .viewAll,
+    .viewVideo,
+    .viewGallery
+   {
+        font-size: 20px;
+    }
+    .gallery .gallery-wrapper .video-item h4,
+    .video .video-wrapper .video-item h4 ,.top-footer ul li a{
+        font-size: 16px;
+    }
+    .copyright p{
+        font-size: 14px;
+    }
+    .dev p{
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1440px) {
+    header nav ol li a {
+        font-size: 13px;
+    }
+    .mainMenu.login button,
+    .mainMenu.sub button {
+        font-size: 15px;
+    }
+    .mainMenu.count span {
+        font-size: 14px;
+    }
+    .price-table h2,
+    .news h2 {
+        font-size: 24px;
+    }
+    .top-footer h4{
+        font-size: 26px;
+    }
+    .price-table .table>thead>tr>th {
+        font-size: 20px;
+    }
+    .price-table .table>tbody>tr>td {
+        font-size: 16px;
+    }
+    .proj-sec h1,
+    .partners h1,
+    .gallery h1,
+    .video h1,
+    .mark-report h1 {
+        font-size: 40px;
+    }
+    .dir-msg h1 {
+        font-size: 35px;
+    }
+    .proj-item .head h3 {
+        font-size: 28px;
+    }
+    .proj-item .txt-sec .body p,
+    .tabcontent .proj-item .txt-sec .body p {
+        font-size: 16px;
+    }
+    .proj-item .txt-sec .btns button,
+    .tabcontent .proj-item .txt-sec .btns button,
+    .proj-item .txt-sec .btns a,
+    .tabcontent .proj-item .txt-sec .btns a {
+        font-size: 18px;
+    }
+    .msg p b {
+        font-size: 18px;
+    }
+    .rit p.name {
+        font-size: 16px;
+    }
+    .report-wrap .proj-item .head h3 {
+        font-size: 20px;
+    }
+    .viewAll,
+    .viewVideo,
+    .viewGallery
+   {
+        font-size: 23px;
+    }
+    .gallery .gallery-wrapper .video-item h4,
+    .video .video-wrapper .video-item h4 ,.top-footer ul li a{
+        font-size: 18px;
+    }
+    .copyright p{
+        font-size: 14px;
+    }
+    .dev p{
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 1440px) {
+    header nav ol li a {
+        font-size: 15.85px;
+    }
+    .mainMenu.login button,
+    .mainMenu.sub button {
+        font-size: 16.61px;
+    }
+    .mainMenu.count span {
+        font-size: 14.24px;
+    }
+    .price-table .table>thead>tr>th {
+        font-size: 24px;
+    }
+    .price-table .table>tbody>tr>td {
+        font-size: 18px;
+    }
+    .proj-sec h1,
+    .partners h1,
+    .gallery h1,
+    .video h1,
+    .mark-report h1 {
+        font-size: 45px;
+    }
+    .dir-msg h1 {
+        font-size: 40px;
+    }
+    .proj-item .head h3 {
+        font-size: 34px;
+    }
+    .proj-item .txt-sec .body p,
+    .tabcontent .proj-item .txt-sec .body p {
+        font-size: 18px;
+    }
+    .proj-item .txt-sec .btns button,
+    .tabcontent .proj-item .txt-sec .btns button,
+    .proj-item .txt-sec .btns a,
+    .tabcontent .proj-item .txt-sec .btns a {
+        font-size: 22px;
+    }
+    .msg p b {
+        font-size: 20px;
+    }
+    .rit p.name {
+        font-size: 18px;
+    }
+    .price-table h2,
+    .news h2 {
+        font-size: 30px;
+    }
+    .report-wrap .proj-item .head h3 {
+        font-size: 26.88px;
+    }
+    .viewAll,
+    .viewVideo,
+    .viewGallery,
+    .gallery .gallery-wrapper .video-item h4 ,.top-footer ul li a {
+        font-size: 25px;
+    }
+    .video .video-wrapper .video-item h4 {
+        font-size: 24px;
+    }
+    .top-footer h4{
+        font-size: 30px;
+    }
+    .copyright p{
+        font-size: 20px;
+    }
+    .dev p{
+        font-size: 23px;
     }
 }
