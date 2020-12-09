@@ -1028,7 +1028,7 @@ ol.top-menu {
 
 .ham-menu .login button {
     width: 130px;
-    font-family: 'ralewaybold';
+    font-family: 'ralewaymedium';
     border-radius: 5px;
     margin-top: 20px;
     padding: 10px 20px;
@@ -1074,7 +1074,11 @@ ol.top-menu {
     font-weight: bold;
     font-size: 14px;
     padding: 15px 20px 0;
-    font-family: 'ralewaymedium';}
+    
+    font-family: 'ralewaysemibold';
+
+
+}
 
 .primary-menu li span:after {
     content: '+';
